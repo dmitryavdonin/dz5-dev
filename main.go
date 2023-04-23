@@ -14,6 +14,8 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 
+const version = "1.0.0"
+
 var (
 	server *gin.Engine
 
@@ -54,6 +56,10 @@ func main() {
 	})
 
 	router.GET("/metrics", gin.WrapH(promhttp.Handler()))
+
+	router.GET("/version", func(ctx *gin.Context) {
+		ctx.JSON(http.StatusOK, gin.H{"version": version})
+	})
 
 	UserRouteController.UserRoute(router)
 
