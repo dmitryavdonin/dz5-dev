@@ -1,0 +1,4 @@
+.env
+deployments/.data
+cert
+.well-known

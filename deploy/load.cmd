@@ -1,1 +1,0 @@
-hey -z 60m -q 0.5 -m GET -H "Accept: text/json" http://arch.homework:8080/user/
