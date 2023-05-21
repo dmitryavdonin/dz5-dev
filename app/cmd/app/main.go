@@ -12,7 +12,7 @@ import (
 	lg "github.com/dmitryavdonin/gtools/logger"
 )
 
-var Version = "1.0.0"
+var Version = "2.0.0"
 
 func main() {
 	cfg, err := config.InitConfig("")

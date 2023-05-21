@@ -2,7 +2,6 @@ package config
 
 import (
 	"fmt"
-	"time"
 
 	"github.com/vrischmann/envconfig"
 )
@@ -15,19 +14,6 @@ type Config struct {
 
 	Log struct {
 		Level string
-	}
-
-	Redis struct {
-		Url  string
-		Pass string
-	}
-
-	Session struct {
-		TTL time.Duration
-	}
-
-	UsersService struct {
-		URI string
 	}
 }
 
